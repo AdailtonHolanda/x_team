@@ -1,0 +1,18 @@
+[project]
+name = "x-team"
+version = "0.1.0"
+description = "Support triage: route classifier + KB question answering"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["baseline"]
